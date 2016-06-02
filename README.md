@@ -1,7 +1,5 @@
 # ReactNativeWorkShop
 
-# How to Use it
-
 进入项目目录
 
 ```bash
