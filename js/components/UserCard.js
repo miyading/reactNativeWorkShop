@@ -45,19 +45,19 @@ const styles = StyleSheet.create({
     },
     shadowRadius: 2
   }
-})
+});
 
-function UserCard() {
+function UserCard({user}) {
   return (
     <View style={[styles.card, styles.shadow]}>
       <Image
         style={styles.avatar}
-        source={{ uri: 'http://www.people.com.cn/mediafile/pic/20101103/9/1550245162796501193.jpg' }}
+        source={{ uri: user.photo}}
       />
       <View style={styles.textWrapper}>
-        <Text style={styles.name}>liwen zhang</Text>
-        <Text style={styles.job}>Dev on sun</Text>
-        <Text style={styles.email}>lwzhang@thoughtworks.com</Text>
+        <Text style={styles.name}>{user.name}</Text>
+        <Text style={styles.job}>{user.title}</Text>
+        <Text style={styles.email}>{user.email}</Text>
       </View>
     </View>
   )
